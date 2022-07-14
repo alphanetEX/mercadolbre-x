@@ -1,0 +1,574 @@
+/* :root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #0044AA;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+
+.last-visit h3,
+.offers h3{
+    font-size: 24px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+header{
+    background-color: #EAC926;
+    padding-bottom: 30px;
+}
+
+div.top-header{
+    padding: 5%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header figure.logo{
+    width: 50%;
+    max-width: 220px;
+}
+
+header figure.logo{
+    padding: 10px;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header .form{
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .form .input{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-bottom: 2px;
+    width: 70%;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    color: #666;
+}
+
+header .form .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px;
+    /* padding-left: 0px; */
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px none transparent;
+    border-radius: 0px 5px 5px 0px;
+    width: 12%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    /* Clase 13 peer-review */
+    display: none;
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /* Clase 16 - Micro desafío 1 */
+    position: relative;
+}
+
+article div.main-article i{
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #39b54a;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    /* Clase 16 - Micro desafío 1 */
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    transition: all 600ms;
+}
+
+/* Clase 16 - Micro desafío 1 */
+article div.main-article i:hover{
+    transform: rotate(-90deg);
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .price {
+    width: 28%;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .discount {
+    width: 45%;
+}
+
+article div.main-article h4{
+    margin-top: 20px;
+    display: none;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+/* Clase 15 - Code Review */
+/* Estilos del register.html */
+
+/* Micro-Desafío 3 - input:focus */
+/* El selector > permite modificar a los elementos hijos directos de un contenedor padre */
+/* En este caso a todos los inputs que sean hijos directos de un contenedor .form-div*/
+form.register-form .form-div>input:focus{
+    font-weight: bold;
+}
+.register-title{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly
+}
+form.register-form .form-div{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+}
+
+.form-div input{
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-buttons .submit-button{
+    color:#FFF;
+    background-color: #0331ea;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.form-buttons .reset-button{
+    color:#FFF;
+    background-color: #0331ea;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+/* Estilos del login.html */
+
+/* Micro-Desafío 3 - input:focus */
+form.login-form .form-div input:focus{
+    font-weight: bold;
+}
+
+form.login-form .form-div input::placeholder{
+    color: #666;
+    font-weight: normal;
+}
+
+.login-title{
+    text-align: center;
+    margin: 10px;
+}
+
+.login-form .form-div{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+    text-align: center;
+}
+
+.form-button .submit-button{
+    display: flex;
+    color:#FFF;
+    background-color: #0331ea;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+/* Clase 16 - Micro desafío 2 */
+.login-form button{
+    transition: all 0.6s;
+}
+/* Clase 16 - Micro desafío 2 */
+.login-form button:hover{
+    background-color: #0331ea;
+}
+
+.footer{
+    text-align: center;
+    margin: 10px;
+}
+
+.fa-credit-card{
+    color: #1333b4;
+    size: 2em;
+}
+
+.fa-gift{
+    color: #1333b4;
+    size: 2em;
+}
+
+.fa-user-shield{
+    color: #1333b4;
+    size: 2em;
+}
+
+
+
+
+/* media query para navegación en tablets */
+@media (min-width: 480px){
+  
+    main section div article{
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        /* Clase 16 - Micro desafío 1 */
+        box-shadow: none;
+        transition: all 1s;
+    }
+
+    /* Clase 16 - Micro desafío 1 */
+    main section div article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article div.main-article h4{
+        /* display: block; */
+        /* Clase 16 - Micro desafío 1 */
+        display: none;
+    }
+    
+    /* Clase 16 - Micro desafío 1 */
+    main section div article:hover h4{
+        display: block;
+    }
+
+    /* Clase 13 peer-review */
+    div.burger-menu{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+    }
+
+    /* Clase 14 - Micro desafío 1 */
+    p.price{
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 45%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+     .navbar ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .navbar ul li{
+        margin-left: 5px;
+    }
+
+    form.register-form .form-div{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-div input{
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    
+    .form-buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .form-buttons .submit-button{
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    
+    .form-buttons .reset-button{
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+
+    form.login-form .form-div input:focus{
+        font-weight: bold;
+    }
+    
+    form.login-form .form-div input::placeholder{
+        color: #666;
+        font-weight: normal;
+    }
+    
+    .login-title{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .login-form .form-div{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        margin: 10px; 
+        text-align: center;
+    }
+    
+    .form-button .submit-button{
+        display: flex;
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+
+    
+}
+
+/* media query para navegación en desktop */
+@media (min-width: 960px){
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 22%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+     .navbar ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul li{
+        margin-left: 10px;
+    }
+
+    
+    /* Clase 15 - Code Review */
+    
+    form.register-form .form-div{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-div input{
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    
+    .form-buttons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .form-buttons .submit-button{
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    
+    .form-buttons .reset-button{
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+
+    form.login-form .form-div input:focus{
+        font-weight: bold;
+    }
+    
+    form.login-form .form-div input::placeholder{
+        color: #666;
+        font-weight: normal;
+    }
+    
+    .login-title{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .login-form .form-div{
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        margin: 10px; 
+        text-align: center;
+    }
+    
+    .form-button .submit-button{
+        display: flex;
+        color:#FFF;
+        background-color: #0331ea;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+    
+
+}
+
+
+
+
+
